@@ -221,6 +221,7 @@ nav{
     font-weight: 700;
     background-color: #eee;
     border: none;
+    outline: none;
     color: #737373;
 }
 
@@ -265,4 +266,85 @@ nav{
     font-size: 26px;
     font-weight: bold;
     margin: 10px 0px;
+}
+
+.Reviews{
+    text-align: center;
+}
+
+.Reviews p{
+    text-align: center;
+    width: 40%;
+    margin: 15px auto;
+}
+
+.My_contacts{
+    background-image: url(../img/contacts_fon.png);
+    color: #eee;
+    text-align: center;
+}
+
+.mark{
+    display: inline-block;
+    margin: 50px 50px;
+    width: 200px;
+}
+
+.My_contacts h3{
+    font-size: 24px;
+    text-transform: uppercase;
+    margin: 20px;
+}
+
+.Edits{
+    background-color: #d2d6dc;
+    width: 353px;
+    height: 35px;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.message{
+    background-color: #d2d6dc;
+    width: 736px;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.Send_bottom input{
+    border-color: #eee;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    background: none;
+    width: 200px;
+    height: 60px;
+    color: #eee;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.form_radio{
+    margin: 30px;
+}
+
+.social_media img{
+    margin: 30px 60px;
+}
+
+footer{
+    height: 70px;
+    background-color: #344051;
+    text-align: center;
+    color: #eee;
+}
+
+footer p{
+    line-height: 70px
 }
