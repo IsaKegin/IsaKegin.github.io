@@ -206,7 +206,7 @@ nav{
 }
 
 .Calculator{
-    width: 50%;
+    width: 40%;
     margin: 0 auto;
 }
 
@@ -221,9 +221,9 @@ nav{
     height: 40px;
     font-weight: 700;
     background-color: #eee;
-    border: none;
-    outline: none;
+    appearance: none;
     color: #737373;
+    padding-left: 15px;
 }
 
 .result{
@@ -291,6 +291,10 @@ nav{
     width: 200px;
 }
 
+.mark p{
+    margin-top: 10px;
+}
+
 .My_contacts h3{
     font-size: 24px;
     text-transform: uppercase;
@@ -344,6 +348,38 @@ footer{
     background-color: #344051;
     text-align: center;
     color: #eee;
+}
+
+.radio_input{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.radio_input+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+  }
+
+.radio_input+label::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: none;
+    border-radius: 100%;
+    background-color: #cfd2d7;
+    margin-right: 0.8em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+
+.radio_input:checked+label::before {
+    background-color: #c96500;
 }
 
 footer p{
