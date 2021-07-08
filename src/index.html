@@ -10,26 +10,53 @@
 
 <body>
 
+    <div class="preloader">
+        <div class="preloader__row">
+            <div class="preloader__item"></div>
+            <div class="preloader__item"></div>
+        </div>
+    </div>
+
+    <script>
+        window.onload = function () {
+            document.body.classList.add('loaded_hiding');
+            window.setTimeout(function () {
+                document.body.classList.add('loaded');
+                document.body.classList.remove('loaded_hiding');
+            }, 500);
+        }
+    </script>
+    
     <header>
         <nav>
             <div class="logo">Isa Kegin</div>
             <div class="menu">
                 <ul>
-                    <li>About me</li>
-                    <li>Services</li>
-                    <li>Cases</li>
-                    <li>Priceс</li>
-                    <li>Reviews</li>
-                    <li>Contacts</li>
+                    <li>
+                        <a href="#">About me</a>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                    <li>
+                        <a href="#">Cases</a>
+                    </li>
+                    <li>
+                        <a href="#">Priceс</a>
+                    </li>
+                    <li>
+                        <a href="#">Reviews</a>
+                    </li>
+                    <li>
+                        <a href="#">Contacts</a>
+                    </li>
                 </ul>
             </div>
         </nav>
     </header>
 
 
-
-
-    <div class="main">
+    <section class="main">
 
         <div class="title_container">
             <h1>Hi!<br>I'm Isa</h1>
@@ -39,7 +66,7 @@
                 target="_blank"><input type="submit" value="My future works"></a>
         </div>
 
-    </div>
+    </section>
 
 
 
@@ -60,7 +87,8 @@
                 voluptatibus. Cumque!</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam suscipit labore quidem modi aperiam
                 voluptatem dolore, tempore obcaecati laudantium officia nam, reprehenderit blanditiis sequi facere quas
-                nesciunt. Quisquam, dolor, vitae!</p>
+                nesciunt. Quisquam, dolor, vitae!
+            </p>
             <a href="https://docs.google.com/document/d/1OmW0Lh9dkf5QxpVqfO3_WedjT8gvZrHz" target="_blank"><input
                     type="submit" value="Download resume"></a>
         </div>
@@ -117,7 +145,7 @@
                 <h4>CLIENT:</h4>
                 <p>Company</p>
                 <h4>WEBSITE:</h4>
-                <p>google.com </p>
+                <p> <a href="https://google.com" target="_blank">google.com </a></p>
                 <a href="https://google.com" target="_blank"><button>VISIT LIVE SITE</button></a>
             </div>
 
@@ -125,7 +153,8 @@
                 <h2>Project name</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod hic earum impedit quas at rem maiores
                     pariatur autem obcaecati, nihil repellat a error, laborum assumenda est eligendi, corporis. Sapiente
-                    corporis ipsum labore harum voluptates quidem sint eos, repellendus ipsa fugiat.</p>
+                    corporis ipsum labore harum voluptates
+                    quidem sint eos, repellendus ipsa fugiat.</p>
             </div>
         </div>
 
@@ -236,7 +265,8 @@
             </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, commodi optio explicabo magnam
                 veritatis unde porro accusantium libero aspernatur natus facere? Saepe quibusdam voluptate, cupiditate
-                molestiae accusantium vitae nihil quisquam.</p>
+                molestiae accusantium vitae nihil quisquam.
+            </p>
             <p><b>Михаил</b>, Ген деректор ПАО "Газпром"</p>
         </div>
 
@@ -280,12 +310,13 @@
 
         <form action="#">
             <div>
-                <input  class="Edits" type="text" name="Name_input" placeholder="Name">
-                <input  class="Edits" type="text" name="Email_input" placeholder="E-mail">
+                <input class="Edits" type="text" name="Name_input" placeholder="Name" required autocomplete="on">
+                <input class="Edits" type="text" name="Email_input" placeholder="E-mail" required autocomplete="on">
             </div>
 
             <div>
-                <textarea class="message"name="message" id="1" cols="43" rows="10" placeholder="Message"></textarea>
+                <textarea class="message" name="message" id="1" cols="43" rows="10" placeholder="Message"
+                    required></textarea>
             </div>
 
             <div class="Send_bottom">
