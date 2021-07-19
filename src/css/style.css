@@ -12,12 +12,10 @@ nav {
 }
 
 .logo {
-    width: 30%;
-    text-align: center;
+    text-align: left;
     font-size: 28px;
     line-height: 60px;
     color: white;
-    float: left;
 }
 
 .menu {
@@ -25,7 +23,6 @@ nav {
     line-height: 68px;
     color: white;
     float: right;
-    margin-right: 14%;
     text-transform: uppercase;
 }
 
@@ -33,10 +30,14 @@ nav {
     opacity: 0;
     font-size: 16px;
     float: left;
-    padding: 0px 20px;
+    padding: 0px 13px;
     animation: topshift 0.5s ease forwards;
     -o-animation: topshift 0.5s ease forwards;
     -webkit-animation: topshift 0.5s ease forwards;
+}
+
+.menu li a{
+    text-decoration: none;
 }
 
 .menu li:nth-child(2) {
@@ -72,16 +73,12 @@ nav {
 
 .main {
     height: 100%;
-    background: url(../img/12.jpg);
-    background-position: right 1% top;
-    background-repeat: no-repeat;
-    background-size: 46% auto;
+    background: url(../img/12.png) 100% 100%/auto 85% no-repeat, url(../img/123.jpg) center/cover no-repeat;
 }
 
 .title_container {
+    width: 100%;
     float: left;
-    width: 70%;
-    padding-top: 18%;
     text-align: center;
     animation: showtitle 1s ease forwards;
     -o-animation: showtitle 1s ease forwards;
@@ -101,7 +98,7 @@ nav {
 
 .title_container h1 {
     color: #2c384a;
-    font-size: 60px;
+    font-size: 72px;
     text-align: center;
     font-weight: bold;
 }
@@ -328,13 +325,12 @@ nav {
     text-align: center;
 }
 
-.mark {
+.merk {
     display: inline-block;
-    margin: 50px 50px;
     width: 200px;
 }
 
-.mark p {
+.merk p {
     margin-top: 10px;
 }
 
@@ -597,4 +593,8 @@ footer p {
 
 .loaded .preloader {
     display: none;
+}
+
+.white-btn:visited{
+    color: white;
 }
