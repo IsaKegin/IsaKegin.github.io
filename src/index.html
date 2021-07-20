@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <title>Агада</title>
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
 </head>
 
 <body>
@@ -30,60 +30,28 @@
 
     <header>
         <nav>
-            <div class="container">
-                <div class="row">
-                    <div class="col-xxl-2 col-xl-3 col-lg-3 col-7">
-                        <div class="logo">Isa Kegin</div>
-                    </div>
-                    <div
-                        class="px-0 col-xxl-6 col-xl-7 col-lg-9 offset-xxl-4 offset-xl-2 offset-lg-0 d-none d-lg-block">
-                        <div class="menu">
-                            <ul>
-                                <li><a href="#">About me</a></li>
-                                <li><a href="#">Services</a></li>
-                                <li><a href="#">Cases</a></li>
-                                <li><a href="#">Priceс</a></li>
-                                <li><a href="#">Reviews</a></li>
-                                <li><a href="#">Contacts</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-5 d-flex d-lg-none flex-column justify-content-center align-items-end">
-                        <div class="dropdown">
-                            <a class="btn btn-outline-secondary dropdown-toggle white-btn" href="#" role="button"
-                                id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                                Menu
-                            </a>
-
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">About me</a></li>
-                                <li><a class="dropdown-item" href="#">Services</a></li>
-                                <li><a class="dropdown-item" href="#">Cases</a></li>
-                                <li><a class="dropdown-item" href="#">Priceс</a></li>
-                                <li><a class="dropdown-item" href="#">Reviews</a></li>
-                                <li><a class="dropdown-item" href="#">Contacts</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+            <div class="logo">Isa Kegin</div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">About me</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Cases</a></li>
+                    <li><a href="#">Priceс</a></li>
+                    <li><a href="#">Reviews</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
             </div>
         </nav>
     </header>
 
 
     <div class="main">
-        <div class="container h-100">
-            <div class="row align-items-center h-100">
-                <div class="col-lg-6 col-10">
-                    <div class="title_container">
-                        <h1>Hi!<br>I'm Isa</h1>
-                        <h4>Novice front-end developer</h4>
-                        <input type="submit" value="About me">
-                        <a href="https://sun9-27.userapi.com/impg/ZN6PCiWKn_NeddUIjsBCOsSaT4SjxQxGY4SMFQ/NQIx-31Pm6w.jpg?size=744x259&quality=96&sign=d63cec44feb9d32f63dc8c4a695e58f2&type=album"
-                            target="_blank"><input type="submit" value="My future works"></a>
-                    </div>
-                </div>
-            </div>
+        <div class="title_container">
+            <h1>Hi!<br>I'm Isa</h1>
+            <h4>Novice front-end developer</h4>
+            <input type="submit" value="About me">
+            <a href="https://sun9-27.userapi.com/impg/ZN6PCiWKn_NeddUIjsBCOsSaT4SjxQxGY4SMFQ/NQIx-31Pm6w.jpg?size=744x259&quality=96&sign=d63cec44feb9d32f63dc8c4a695e58f2&type=album"
+                target="_blank"><input type="submit" value="My future works"></a>
         </div>
     </div>
 
@@ -155,9 +123,9 @@
         <div class="title">
             <h2>Cases</h2>
         </div>
-        <div class="galery">
+        <div class="galery" id="image">
             <a href="https://html5css.ru/howto/howto_js_tab_img_gallery.php" target="_blank"><img
-                    src="img/img_lights.jpg" alt="Ну пока что картинка" width="900"></a>
+                    src="img/img_lights.jpg" alt="Ну пока что картинка" width=60%></a>
         </div>
         <div class="client_info">
             <div class="clent_website">
@@ -183,7 +151,7 @@
         <form action="Calculator" class="Calculator">
 
             <div class="title">
-                <h2>Cost Calculator</h2>
+                <h2>Calculator</h2>
             </div>
             <div class="list">
                 <h3>Type of site</h3>
@@ -228,6 +196,7 @@
                     <p>0</p>
                 </div>
             </div>
+        </form>
     </div>
 
 
@@ -241,7 +210,7 @@
     <div class="statistics">
 
         <div class="title">
-            <h2>Some statistics</h2>
+            <h2>Statistics</h2>
         </div>
         <div class="statisic">
             <div class="static_item">
@@ -309,45 +278,48 @@
             <h2>My contacs</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, velit.</p>
         </div>
+        <div class="merks">
+            <div class="merk">
+                <img src="img/mark.png" alt="yes">
+                <p>Ленинград<br> Новгородский проспект 64</p>
+            </div>
 
-        <div class="merk">
-            <img src="img/mark.png" alt="yes">
-            <p>Ленинград<br> Новгородский проспект 64</p>
-        </div>
+            <div class="merk">
+                <img src="img/mail.png" alt="yes">
+                <p>kakoi-to@gmail.com</p>
+            </div>
 
-        <div class="merk">
-            <img src="img/mail.png" alt="yes">
-            <p>kakoi-to@gmail.com</p>
-        </div>
+            <div class=merk>
+                <img src="img/phone.png" alt="yes">
+                <p>8-800-555-35-35</p>
+            </div>
 
-        <div class=merk>
-            <img src="img/phone.png" alt="yes">
-            <p>8-800-555-35-35</p>
         </div>
 
         <h3>Leave me a message!</h3>
+        <div class="forma">
+            <form action="#" class="feedback">
+                <div>
+                    <input class="Edits" type="text" name="Name_input" placeholder="Name" required autocomplete="on">
+                    <input class="Edits" type="text" name="Email_input" placeholder="E-mail" required autocomplete="on">
+                </div>
+        </div>
 
-        <form action="#">
-            <div>
-                <input class="Edits" type="text" name="Name_input" placeholder="Name" required autocomplete="on">
-                <input class="Edits" type="text" name="Email_input" placeholder="E-mail" required autocomplete="on">
-            </div>
+        <div class="message_area">
+            <textarea class="message" name="message" id="1" cols="43" rows="10" placeholder="Message"
+                required></textarea>
+        </div>
 
-            <div>
-                <textarea class="message" name="message" id="1" cols="43" rows="10" placeholder="Message"
-                    required></textarea>
-            </div>
+        <div class="Send_bottom">
+            <input type="submit" value="Send">
+        </div>
 
-            <div class="Send_bottom">
-                <input type="submit" value="Send">
-            </div>
-
-            <div class="social_media">
-                <img src="img/facebook_logo.png" alt="facebook">
-                <img src="img/tweeter_logo.png" alt="twitter">
-                <img src="img/github_logo.png" alt="github">
-                <img src="img/instagram_logo.png" alt="instagram">
-            </div>
+        <div class="social_media">
+            <img src="img/facebook_logo.png" alt="facebook">
+            <img src="img/tweeter_logo.png" alt="twitter">
+            <img src="img/github_logo.png" alt="github">
+            <img src="img/instagram_logo.png" alt="instagram">
+        </div>
 
         </form>
 
@@ -364,7 +336,7 @@
     <footer>
         <p>Copyriht © 2021 Isa Kegin</p>
     </footer>
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script> -->
 </body>
 
 </html>

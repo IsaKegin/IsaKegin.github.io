@@ -9,21 +9,24 @@ nav {
     background-color: #344051;
     position: fixed;
     z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .logo {
     text-align: left;
     font-size: 28px;
-    line-height: 60px;
     color: white;
+    padding-left: 10%;
 }
 
 .menu {
     font-size: 18px;
-    line-height: 68px;
     color: white;
     float: right;
     text-transform: uppercase;
+    padding-right: 10%;
 }
 
 .menu li {
@@ -74,11 +77,12 @@ nav {
 .main {
     height: 100%;
     background: url(../img/12.png) 100% 100%/auto 85% no-repeat, url(../img/123.jpg) center/cover no-repeat;
+    display: flex;
+    align-items: center;
 }
 
 .title_container {
-    width: 100%;
-    float: left;
+    width: 70%;
     text-align: center;
     animation: showtitle 1s ease forwards;
     -o-animation: showtitle 1s ease forwards;
@@ -177,15 +181,15 @@ nav {
     padding-top: 50px;
     width: 100%;
     text-align: center;
+    display: flex;
+    justify-content: space-around;
 }
 
 .what_item {
     transition: all 0.5s;
     transform: scale(1);
-    margin: 0px 50px;
     text-align: center;
     width: 180px;
-    display: inline-block;
 }
 
 .what_i_can .subtitle {
@@ -202,8 +206,7 @@ nav {
 
 .client_info {
     display: flex;
-    flex-direction: row;
-    width: 900px;
+    width: 60%;
     margin: 30px auto;
 }
 
@@ -292,12 +295,13 @@ nav {
 .statisic {
     padding-top: 50px;
     width: 100%;
-    text-align: center
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
 }
 
 .static_item {
     transition: all 0.5s;
-    margin: 0px 70px;
     text-align: center;
     width: 180px;
     display: inline-block;
@@ -325,9 +329,15 @@ nav {
     text-align: center;
 }
 
+.merks{
+    display: flex;
+    justify-content: space-around;
+}
+
 .merk {
     display: inline-block;
     width: 200px;
+    padding-top: 30px;
 }
 
 .merk p {
@@ -339,10 +349,14 @@ nav {
     text-transform: uppercase;
     margin: 20px;
 }
+.forma {
+    display: flex;
+    justify-content: center;
+}
 
 .Edits {
     background-color: #d2d6dc;
-    width: 353px;
+    width: 290px;
     height: 35px;
     margin: 15px;
     padding: 10px;
@@ -353,7 +367,7 @@ nav {
 
 .message {
     background-color: #d2d6dc;
-    width: 736px;
+    width: 610px;
     margin: 15px;
     padding: 10px;
     border-radius: 5px;
@@ -441,7 +455,7 @@ footer p {
     content: "";
     position: relative;
     left: 50%;
-    top: 50px;
+    top: 30px;
     transform: translate(-50%, 0);
 }
 
@@ -597,4 +611,10 @@ footer p {
 
 .white-btn:visited{
     color: white;
+}
+
+@media (max-width: 644px){
+    .message{
+        width: 290px;
+    }
 }
