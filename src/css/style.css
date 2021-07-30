@@ -142,6 +142,11 @@ nav {
     box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.3);
 }
 
+
+#about_me{
+    margin-top: 50  %;
+}
+
 .title {
     text-align: center;
 }
@@ -782,8 +787,3 @@ footer p {
     }
 }
 
-@media (max-height: 400px){
-    .menu ul{
-        height: 200px;
-}
-}
