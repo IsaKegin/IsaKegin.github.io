@@ -8,7 +8,7 @@ nav {
     height: 60px;
     background-color: #344051;
     position: fixed;
-    z-index: 1;
+    z-index: 900;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -619,6 +619,30 @@ footer p {
     }
 }
 
+@keyframes mobileMenuShow {
+    0%{
+        display: flex;
+        opacity: 0;
+        top: -300px;
+    }
+    100%{
+        opacity: 1;
+        top: 60px;
+    }
+}
+
+@keyframes mobileMenuHide {
+    0%{
+        opacity: 1;
+        top: 60px;
+    }
+    100%{
+        display: none;
+        opacity: 0;
+        top: -300px;
+    }
+}
+
 .loaded_hiding .preloader {
     transition: 0.3s opacity;
     opacity: 0;
@@ -630,10 +654,6 @@ footer p {
 
 .white-btn:visited{
     color: white;
-}
-
-.navigation{
-    display: none;
 }
 
 @media (max-width: 1375px){
@@ -649,6 +669,9 @@ footer p {
         border: 2px solid white;
     }
 }
+    .menu_hide{
+        display: none;
+    }
 
 @media (max-width: 1045px){
     .dropdown{
@@ -663,18 +686,28 @@ footer p {
     .ul a{
         color: white;
         text-align: center;
-    } 
+    }   
     .ul{
+        z-index: 600;
         position: fixed;
         width: 100%;
         height: 300px;
         display: flex;
         flex-direction: column;
-        position: fixed;
         padding-bottom: 10px;
         right: 0; 
         top: 60px;
         background-color: rgba(0, 0, 0, 0.6);
+        animation: mobileMenuShow 1s;
+    }
+    .close_menu{
+        z-index: 100;
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0);
+        left: 0px;
+        top: 360px;
+        height: calc(100% - 360px);
+        width: 100%;
     }
     .ul li{
         color: white;
@@ -682,6 +715,10 @@ footer p {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .ul li a:active {
+        color: #e88604;
+        transform: scale(1.05);
     }
     .ul li a::before {
         display: block;
@@ -705,15 +742,18 @@ footer p {
         top: 24px;
         transform: translate(-50%, 0);
     }
+    .menu_hide{
+        animation: mobileMenuHide 1s forwards;
+    }
     .menu{
         display: none;
-    }
-    .navigation{
-        display: block;
     }
 }
 
 @media (max-width: 644px){
+    .what_i_can{
+        background-size: auto 700px;
+    }
     .message{
         width: 290px;
     }
