@@ -21,6 +21,10 @@ nav {
     padding-left: 10%;
 }
 
+.dropdown{
+    display: none;
+}
+
 .menu {
     font-size: 18px;
     color: white;
@@ -29,10 +33,15 @@ nav {
     padding-right: 10%;
 }
 
+.menu ul{
+    display: flex;
+    flex-direction: row;
+}
+
 .menu li {
+    display: block;
     opacity: 0;
     font-size: 16px;
-    float: left;
     padding: 0px 13px;
     animation: topshift 0.5s ease forwards;
     -o-animation: topshift 0.5s ease forwards;
@@ -41,6 +50,7 @@ nav {
 
 .menu li a{
     text-decoration: none;
+    text-align: center;
 }
 
 .menu li:nth-child(2) {
@@ -174,7 +184,6 @@ nav {
 .what_i_can {
     background-image: url(../img/what_i_can.png);
     background-repeat: no-repeat;
-    height: 440px;
 }
 
 .what {
@@ -201,7 +210,13 @@ nav {
 
 .galery {
     text-align: center;
+    margin: 0 auto;
     margin-top: 20px;
+    width: 60%;
+}
+
+.galery img{
+    width: 100%;
 }
 
 .client_info {
@@ -392,9 +407,13 @@ nav {
 .form_radio {
     margin: 30px;
 }
+.social_media{
+    display: flex;
+    justify-content: space-around;
+}
 
 .social_media img {
-    margin: 30px 60px;
+    margin: 30px;
 }
 
 footer {
@@ -613,8 +632,118 @@ footer p {
     color: white;
 }
 
+.navigation{
+    display: none;
+}
+
+@media (max-width: 1375px){
+    .main {
+        background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(../img/12.png) 100% 100%/auto 85% no-repeat, url(../img/123.jpg) center/cover no-repeat;
+        display: flex;
+        align-items: center;
+    }
+    .title_container, .title_container h4, .title_container h1, .title_container input{ 
+        color: white;
+    }
+    .title_container input{
+        border: 2px solid white;
+    }
+}
+
+@media (max-width: 1045px){
+    .dropdown{
+        display: block;
+    }
+    .btn-dropdown{
+        height: 50px;
+        width: 50px;
+        background-color: rgba(0, 0, 0, 0);
+        background: url(../img/botton-menu.png) center center/auto 60% no-repeat;
+        }
+    .ul a{
+        color: white;
+        text-align: center;
+    } 
+    .ul{
+        position: fixed;
+        width: 100%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        padding-bottom: 10px;
+        right: 0; 
+        top: 60px;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+    .ul li{
+        color: white;
+        height: calc(100%/6);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .ul li a::before {
+        display: block;
+        height: 1px;
+        width: 200px;
+        background-color: white;
+        content: "";
+        position: relative;
+        left: 50%;
+        top: 24px;
+        transform: translate(-50%, 0);
+    }
+    .ul li a:hover::before {
+        display: block;
+        height: 1px;
+        width: 200px;
+        background-color: white;
+        content: "";
+        position: relative;
+        left: 50%;
+        top: 24px;
+        transform: translate(-50%, 0);
+    }
+    .menu{
+        display: none;
+    }
+    .navigation{
+        display: block;
+    }
+}
+
 @media (max-width: 644px){
     .message{
         width: 290px;
     }
+    .main{
+        background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(../img/12.png) center 100%/auto 85% no-repeat, url(../img/123.jpg) center/cover no-repeat;
+    }
+    .title_container{
+        width: 100%;
+    }
+    .title_container input{
+        display: block;
+        margin: 16px auto;
+    }
+    .galery {
+        width: 95%;
+    }
+    .client_info {
+        width: 95%;
+    }
+    .what{
+        flex-direction: column;
+        align-items: center;
+    }
+    .Calculator{
+        width: 95%;
+    }
+}
+
+@media (max-height: 400px){
+    .menu ul{
+        height: 200px;
+}
 }

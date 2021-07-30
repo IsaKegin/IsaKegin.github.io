@@ -31,6 +31,7 @@
     <header>
         <nav>
             <div class="logo">Isa Kegin</div>
+            
             <div class="menu">
                 <ul>
                     <li><a href="#">About me</a></li>
@@ -40,8 +41,21 @@
                     <li><a href="#">Reviews</a></li>
                     <li><a href="#">Contacts</a></li>
                 </ul>
+            
+            </div>
+            <div class="dropdown">
+                <button class="btn-dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">                </button>
+                <ul class="ul" aria-label ledby="dropdownMenuButton1">
+                    <li><a href="#">About me</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Cases</a></li>
+                    <li><a href="#">Priceс</a></li>
+                    <li><a href="#">Reviews</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
             </div>
         </nav>
+        
     </header>
 
 
@@ -125,7 +139,7 @@
         </div>
         <div class="galery" id="image">
             <a href="https://html5css.ru/howto/howto_js_tab_img_gallery.php" target="_blank"><img
-                    src="img/img_lights.jpg" alt="Ну пока что картинка" width=60%></a>
+                    src="img/img_lights.jpg" alt="Ну пока что картинка"></a>
         </div>
         <div class="client_info">
             <div class="clent_website">
@@ -303,30 +317,27 @@
                     <input class="Edits" type="text" name="Name_input" placeholder="Name" required autocomplete="on">
                     <input class="Edits" type="text" name="Email_input" placeholder="E-mail" required autocomplete="on">
                 </div>
+
+                <div class="message_area">
+                    <textarea class="message" name="message" id="1" cols="43" rows="10" placeholder="Message"
+                        required></textarea>
+                </div>
+
+                <div class="Send_bottom">
+                    <input type="submit" value="Send">
+                </div>
+
+                <div class="social_media">
+                    <img src="img/facebook_logo.png" alt="facebook">
+                    <img src="img/tweeter_logo.png" alt="twitter">
+                    <img src="img/github_logo.png" alt="github">
+                    <img src="img/instagram_logo.png" alt="instagram">
+                </div>
+
+            </form>
         </div>
-
-        <div class="message_area">
-            <textarea class="message" name="message" id="1" cols="43" rows="10" placeholder="Message"
-                required></textarea>
-        </div>
-
-        <div class="Send_bottom">
-            <input type="submit" value="Send">
-        </div>
-
-        <div class="social_media">
-            <img src="img/facebook_logo.png" alt="facebook">
-            <img src="img/tweeter_logo.png" alt="twitter">
-            <img src="img/github_logo.png" alt="github">
-            <img src="img/instagram_logo.png" alt="instagram">
-        </div>
-
-        </form>
-
-
 
     </div>
-
 
     <div class="map">
         <iframe
@@ -336,7 +347,7 @@
     <footer>
         <p>Copyriht © 2021 Isa Kegin</p>
     </footer>
-    <script src="js/bootstrap.bundle.min.js"></script> -->
+    <script src="js/bootstrap.bundle.js"></script>
 </body>
 
 </html>
